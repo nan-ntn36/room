@@ -1,0 +1,4 @@
+puter.com 
+https://docs.puter.com/
+npm install lucide-react
+npm install @heyputer/puter.js
