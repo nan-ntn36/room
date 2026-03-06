@@ -1,6 +1,7 @@
 import type { Route } from './+types/home';
 import Navbar from '../../components/Navbar';
 import { ArrowRight, ArrowUpRight, Clock, Layers } from 'lucide-react';
+import  Upload  from '../../components/Upload';
 import { Button } from 'components/ui/Button';
 import preview from '../../src/asset/img/rendered.png';
 
@@ -45,7 +46,9 @@ export default function Home() {
               <h3>Upload your floor plan</h3>
               <p>Supports JPG, PNG, and PDF formats, up to 100MB in size.</p>
             </div>
-            <p>Upload images</p>
+            <Upload onComplete={(base64Data) => { 
+              console.log(base64Data);
+            }} />
           </div>
         </div>
       </section>
