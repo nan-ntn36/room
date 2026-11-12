@@ -16,12 +16,24 @@ A modern, production-ready template for building full-stack React applications u
 
 ## Getting Started
 
+### Node.js version
+
+Use **Node.js 20.19.0** to match the Node 20 branch in the Dockerfile and satisfy Vite's requirement. The locked Vite version supports Node.js `^20.19.0 || >=22.12.0`.
+
+With nvm:
+
+```bash
+nvm install 20.19.0
+nvm use 20.19.0
+node -v
+```
+
 ### Installation
 
 Install the dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
 ### Development
